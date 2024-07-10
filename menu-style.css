@@ -1,9 +1,9 @@
 body, html {
-    margin: 1px;
     height: 100%;
     width: 100%;
     box-sizing: border-box;
-
+    overflow: hidden;
+    margin: 1px;
 }
 
 .container{
@@ -149,6 +149,9 @@ body, html {
 
 @media (max-width: 600px){
 
+    .html, body{
+        overflow:auto !important;
+    }
     .container{
         background-size: cover;
         min-height: 160vh;
